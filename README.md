@@ -32,8 +32,8 @@ hard reset.
 
 ## Config
 
-Plain text, default `SYS:.claude/config`. No 8.3 name, no extension — this is
-an Amiga. `keyword value` per line; `#`/`;` are comments. See
+Plain text, default `SYS:.claude/config`. 
+`keyword value` per line; use `#`/`;` for comments. See
 [`config.sample`](config.sample).
 
 ```
@@ -57,8 +57,8 @@ MODEL/K  INSTRUCTION/K  TOKENS/K/N  RESUME_JOBS/S  DIR/K  CONFIG/K  NOJOB/S
 ```
 
 - `MODEL` / `TOKENS` override the config defaults for this run.
-- `NOJOB` — fire a one-shot, print to the shell, write no job file.
-- `DIR` / `CONFIG` — relocate the harness dir / config file.
+- `NOJOB` - fire a one-shot, print to the shell, write no job file.
+- `DIR` / `CONFIG` - relocate the harness dir / config file.
 
 The answer is printed to stdout, so ARexx drives it with zero extra code:
 
