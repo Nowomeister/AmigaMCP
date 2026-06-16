@@ -1,0 +1,24 @@
+# AmigaMCP config - copy to SYS:.claude/config and edit.
+# Plain text, "keyword value" per line. '#' or ';' starts a comment.
+# No 8.3 name, no extension required - this is an Amiga.
+
+key       sk-ant-REPLACE-ME
+model     claude-opus-4-8
+provider  anthropic
+host      api.anthropic.com
+path      /v1/messages
+port      443
+version   2023-06-01
+
+# --- OpenAI-compatible providers (GPT, Gemini compat, Mistral, local) ---
+# provider  openai
+# host      api.openai.com
+# path      /v1/chat/completions
+# model     gpt-4o
+# port      443
+#
+# Local llama.cpp / Ollama over plain HTTP (build the default `make` target):
+# provider  openai
+# host      192.168.1.50
+# path      /v1/chat/completions
+# port      8080
